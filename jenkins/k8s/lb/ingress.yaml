@@ -19,7 +19,7 @@ metadata:
   namespace: jenkins
 spec:
   tls:
-  - secretName: tls
+  - secretName: star-knowledgetree-com
   backend:
     serviceName: jenkins-ui
     servicePort: 8080
