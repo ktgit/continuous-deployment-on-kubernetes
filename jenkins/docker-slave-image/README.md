@@ -1,12 +1,12 @@
 # Jenkins Docker slave image
 
-The Dockerfile and Makefile are used to build the image used on Jenkins slaves (a/k/a agents).
+The Dockerfile and Makefile are used to build the image used on Jenkins slaves (a/k/a agents). Uses [jenkinsci/jnlp-slave](https://hub.docker.com/r/jenkinsci/jnlp-slave/).
 
 ```sh
-## build new image (downloads latest https://hub.docker.com/r/jenkinsci/jnlp-slave/)
+# build new image
 make build
 
-## push to GCP Container Registry
+# push to GCP Container Registry
 make push
 ```
 
