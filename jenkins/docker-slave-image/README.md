@@ -1,17 +1,20 @@
 # Jenkins Docker slave image
 
+The Dockerfile and Makefile are used to build the image used on Jenkins slaves (a/k/a agents).
+
+```sh
+## build new image (downloads latest [jenkinsci/jnlp-slave](https://hub.docker.com/r/jenkinsci/jnlp-slave/))
+make build
+
+## push to GCP Container Registry
+make push
+```
+
 ## Why?
 
-It seems that we are having difficulty passing SSH keys to our Jenkins slave during the build of each job
+It seems that we are having difficulty passing SSH keys to our Jenkins slave during the build of each job.
 Our solution is to add an SSH key to our container that is building our images so that they may have access
 to our private repositories.
-
-## Prerequisites
-
-[Docker](https://docs.docker.com/engine/installation/mac/)
-[Google Cloud SDK](https://cloud.google.com/sdk/)
-
-Authenticate with Google `gcloud init`
 
 ## How to use.
 
