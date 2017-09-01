@@ -3,7 +3,7 @@
 The Dockerfile and Makefile are used to build the image used on Jenkins slaves (a/k/a agents).
 
 ```sh
-## build new image (downloads latest [jenkinsci/jnlp-slave](https://hub.docker.com/r/jenkinsci/jnlp-slave/))
+## build new image (downloads latest https://hub.docker.com/r/jenkinsci/jnlp-slave/)
 make build
 
 ## push to GCP Container Registry
