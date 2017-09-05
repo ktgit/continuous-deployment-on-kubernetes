@@ -1,8 +1,6 @@
 # NOTICE
 
-TBD
-
-jenkins/k8s
+We use this project for running Jenkins within Kubernetes. The instructions below are from the upstream version of this project. Our own instructions can be found in the [jenkins/k8s](https://github.com/ktgit/continuous-deployment-on-kubernetes/tree/master/jenkins/k8s) directory.
 
 # Lab: Build a Continuous Deployment Pipeline with Jenkins and Kubernetes
 
