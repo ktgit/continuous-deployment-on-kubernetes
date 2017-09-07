@@ -8,7 +8,7 @@ INSTANCE = default
 .PHONY: build push shell run start stop rm release
 
 build:
-	docker build -t $(NS)/$(REPO):$(VERSION) .
+	docker build --no-cache -t $(NS)/$(REPO):$(VERSION) .
 
 push:
 	gcloud docker -- push $(NS)/$(REPO):$(VERSION)
