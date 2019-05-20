@@ -18,6 +18,8 @@
   metadata:
     name: jenkins-ui
     namespace: jenkins
+#    annotations:
+#        beta.cloud.google.com/backend-config: '{"ports": {"8080":"vpn-backend-config"}}'
   spec:
     type: NodePort
     selector:
@@ -44,4 +46,3 @@
         targetPort: 50000
         name: slaves
 # [END jenkins_service_discovery]
-  
